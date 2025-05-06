@@ -36,4 +36,75 @@ public User(String fisrtname, String lastname, String password, String email, in
 
 }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public LocalDate getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
+    }
+
+    public String getOriantation() {
+        return oriantation;
+    }
+
+    public void setOriantation(String oriantation) {
+        this.oriantation = oriantation;
+    }
+
+    public LocalDate getDate_inscription() {
+        return date_inscription;
+    }
+
+    public void setDate_inscription(LocalDate date_inscription) {
+        this.date_inscription = date_inscription;
+    }
 }

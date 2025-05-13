@@ -9,6 +9,7 @@ import {RouterOutlet} from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  public log : string = "connexion"
   public Email : string = "";
   public  password: string= "" ;
   public title : string =" Connexion";

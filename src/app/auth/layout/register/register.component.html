@@ -3,10 +3,10 @@
 <form>
   <div class="inscription">
   <label for="firstNam">Prenom:</label>
-  <input id="firstNam" name="firstNam" type="text" [(ngModel)]="firstName" >
+  <input id="firstNam" name="firstNam" type="text" [(ngModel)]="firstname" >
 
   <label for="lastName">Nom:</label>
-  <input id="lastName" name="lastName" type="text" [(ngModel)]="lastName" >
+  <input id="lastName" name="lastName" type="text" [(ngModel)]="lastname" >
 
   <label for="email">Email:</label>
   <input id="email" name="email" type="text" [(ngModel)]="email" >
@@ -14,25 +14,12 @@
   <label for="password">Password:</label>
   <input id="password" name="password" type="text" [(ngModel)]="password" >
 
-  <label for="confirmPassword">Confirme Password:</label>
-  <input id="confirmPassword" name="confirmPassword" type="text" [(ngModel)]="confirmPassword" >
 
-  <label for="birdthday">date of Birdthday:</label>
-  <input id="birdthday" name="birdthday" type="date" [(ngModel)]="birdthdays" >
-
-  <label for="age">Age:</label>
-  <input id="age" name="age" type="text" [(ngModel)]="age" >
-
-  <label for="orientation">Oriantation:</label>
-  <input id="orientation" name="orientation" type="text" [(ngModel)]="orientation" >
-
-  <label for="date_init">date D'inscription:</label>
-  <input id="date_init" name="date_init" type="date" [(ngModel)]="date_init" >
 
   </div>
 
   <div class="button">
-  <button (click)="submitForm()">s'inscrire</button>
+  <button type="submit" (click)="submitForm()">s'inscrire</button>
   </div>
 </form>
 

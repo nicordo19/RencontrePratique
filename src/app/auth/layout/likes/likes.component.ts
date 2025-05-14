@@ -3,11 +3,11 @@ import {RouterOutlet} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 
 @Component({
-  selector: 'app-profil',
+  selector: 'app-likes',
   imports: [RouterOutlet, FormsModule],
-  templateUrl: './profil.component.html',
-  styleUrl: './profil.component.css'
+  templateUrl: './likes.component.html',
+  styleUrl: './likes.component.css'
 })
-export class ProfilComponent {
+export class LikesComponent {
 
 }

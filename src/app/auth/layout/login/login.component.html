@@ -7,5 +7,5 @@
   <label for="password">Mot de passe :</label>
   <input id="password" name="password" type="password"[(ngModel)]="password"  />
 
-  <button type="submit" >{{title}}</button>
+  <button type="submit" (click)="loginForm()" >{{title}}</button>
 </form>

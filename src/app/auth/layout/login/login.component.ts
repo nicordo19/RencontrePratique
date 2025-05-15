@@ -16,6 +16,7 @@ export class LoginComponent {
   public email : string = "";
   public  password: string= "" ;
   public title : string =" Connexion";
+  public message : string ="";
 
 
   constructor(private authService: AuthService, private router: Router) {
@@ -28,10 +29,17 @@ export class LoginComponent {
 
     this.authService.login(userId).subscribe({
       next: (response: any) => {
+        this.message = response;
         console.log("Connexion réussie", response);
+        this.router.navigate(['/accueil']);
         // this.router.navigate(['/accueil']); // Redirection possible ici
       },
       error: (err: any) => {
+        if(err.status == 401){
+          this.message = "Identifiats incorrecto";
+        }else {
+          this.message = "error servor";
+        }
         console.log("Problème avec la connexion", err);
       }
     });

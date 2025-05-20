@@ -1,27 +1,48 @@
-<h1 style="color: black"> {{title}}</h1>
+
+
+<div class="container-inscription">
+  <!-- COLONNE FORMULAIRE -->
+  <div class="left-panel">
+    <div class="logo">Logo</div>
+
+  <div class="title">
+<h1 style="color: black">Inscris toi et fait de super rencontres </h1>
+</div>
 
 <form>
-  <div class="inscription">
+
+    <div class="inscription">
+
   <label for="firstNam">Prenom:</label>
-  <input id="firstNam" name="firstNam" type="text" [(ngModel)]="firstname" >
+  <input class="inputSubmit" id="firstNam" name="firstNam" type="text" [(ngModel)]="firstname" >
 
   <label for="lastName">Nom:</label>
-  <input id="lastName" name="lastName" type="text" [(ngModel)]="lastname" >
+  <input class="inputSubmit" id="lastName" name="lastName" type="text" [(ngModel)]="lastname" >
 
   <label for="email">Email:</label>
-  <input id="email" name="email" type="text" [(ngModel)]="email" >
+  <input class="inputSubmit" id="email" name="email" type="text" [(ngModel)]="email" >
 
   <label for="password">Password:</label>
-  <input id="password" name="password" type="text" [(ngModel)]="password" >
+  <input class="inputSubmit" id="password" name="password" type="text" [(ngModel)]="password" >
+<div class="bouton">
+    <button class="click" type="submit" (click)="submitForm()">s'inscrire</button>
+</div>
 
-
-
-  </div>
-
-  <div class="button">
-  <button type="submit" (click)="submitForm()">s'inscrire</button>
-  </div>
+    </div>
 </form>
+</div>
+  <!-- COLONNE PHOTOS -->
+  <div class="right-panel">
+    <button (click)="goToLogin()"class="login-btn">Connexion</button>
+
+    <div class="profile-bubble">
+      <div  class="avatar" *ngFor="let i of [1,2,3,4,5,6,7]"></div>
+    </div>
+
+    <p class="photo-label">photo de personne</p>
+  </div>
+
+</div>
 
 <router-outlet></router-outlet>
 

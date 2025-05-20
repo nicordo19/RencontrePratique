@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import {Router, RouterOutlet} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {AuthService} from '../../../auth.service';
+import {NgForOf} from '@angular/common';
 
 
 @Component({
   selector: 'app-register',
   imports: [
-    RouterOutlet, FormsModule],
+    RouterOutlet, FormsModule, NgForOf],
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-title : string = "INSCRIPTION";
 
 public firstname : string = "";
 public lastname : string = "";
@@ -24,6 +24,9 @@ constructor(private router : Router , private authService : AuthService) {
 }
 ngOnInit() {
 
+}
+goToLogin(){
+  this.router.navigate(["/login"]).then(r => true)
 }
 submitForm(){
   this.router.navigate(['/register']);

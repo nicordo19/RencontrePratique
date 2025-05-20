@@ -31,8 +31,10 @@ export class LoginComponent {
       next: (response: any) => {
         this.message = response;
         console.log("Connexion réussie", response);
-        this.router.navigate(['/accueil']);
-        // this.router.navigate(['/accueil']); // Redirection possible ici
+
+        setTimeout(() => {
+        this.router.navigate(['/profile']); // Redirection accueile
+        },1000);
       },
       error: (err: any) => {
         if(err.status == 401){

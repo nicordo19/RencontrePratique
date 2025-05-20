@@ -1,12 +1,106 @@
+.container-inscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  height: 100vh;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.left-panel {
+  flex: 1;
+  max-width: 50%;
+  padding: 40px;
+}
+
+.logo {
+  background-color: #eee;
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: fit-content;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.title h1 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: black;
+}
+
 .inscription {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 16px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 30px;
 }
-.button{
+
+.inputSubmit {
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid #999;
+  font-size: 1rem;
+}
+
+.bouton {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.click {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.right-panel {
+  flex: 1;
   display: flex;
-  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+}
+
+.login-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  background-color: #eee;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+.profile-bubble {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
+  gap: 10px;
+  border: 2px dashed #ccc;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.photo-label {
+  font-size: 0.9rem;
+  color: #666;
 }
